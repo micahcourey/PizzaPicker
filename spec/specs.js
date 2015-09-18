@@ -28,4 +28,8 @@ describe('OrderPrice', function() {
     var testPizza = new Pizza("Large", 3, 1);
     expect(testPizza.orderPrice()).to.equal(27);
   });
+  it("calculates toppings cost into pizza price", function() {
+    var testPizza = new Pizza("Large", 3, 3);
+    expect(testPizza.orderPrice()).to.equal(81);
+  });
 });
