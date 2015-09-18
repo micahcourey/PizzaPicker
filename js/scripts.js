@@ -30,9 +30,15 @@ $(document).ready(function() {
 
     var newPizza = new Pizza(pizzaSize, pizzaToppings, pizzaQuantity);
     var price = newPizza.orderPrice();
-
-    $("#order-price").text("$" + price);
-    $("#price").show();
+    if (price !== 0) {
+      $("#error").text("");
+      $("#order-price").text("Your pizza costs $" + price);
+      $("#price").show();
+    } else {
+      $("#order-price").text("");
+      $("#error").text("Please complete the form");
+      $("#price").show();
+    };
     event.preventDefault();
   });
 });

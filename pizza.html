@@ -16,7 +16,7 @@
         <form id="pizza-form">
           <div class="form-group">
             <select class="form-control" id="pizza-size">
-              <option value="">Choose a size:</option>
+              <option value="" disabled selected>Choose a size</option>
               <option value="Small">Small</option>
               <option value="Medium">Medium</option>
               <option value="Large">Large</option>
@@ -45,13 +45,12 @@
             <input type="checkbox" name="topping" id="topping"> proscuitto |
           </div>
           <div class="form-group">
-            
             <input type="number" class="form-control" id="quantity" placeholder="Enter the number of pizzas you would like to order">
           </div>
             <button type="submit" class="btn btn-primary">Calculate Price</button>
         </form>
         <div id="price">
-          <h2>Your pizza costs <span id="order-price"></span>. Enjoy your pizza.</h2>
+          <h2><span id="order-price"></span><span id="error"></span></h2>
         </div>
       </div>
     </div>
