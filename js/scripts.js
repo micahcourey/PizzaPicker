@@ -22,19 +22,17 @@ Pizza.prototype.orderPrice = function() {
   return pizzaOrderPrice;
 };
 
-$document.ready(function() {
+$(document).ready(function() {
   $("form#pizza-form").submit(function(event){
-    event.preventDefault();
     var pizzaSize = $("select#pizza-size").val();
-    var pizzaToppings = $("input$toppings:checked").length;
-    var pizzaQuantity = $("input#quantity").val()
-  })
+    var pizzaToppings = $("input#topping:checked").length;
+    var pizzaQuantity = $("input#quantity").val();
+
+    var newPizza = new Pizza(pizzaSize, pizzaToppings, pizzaQuantity);
+    var price = newPizza.orderPrice();
+
+    $("#order-price").text("$" + price);
+    $("#price").show();
+    event.preventDefault();
+  });
 });
-
-
-
-
-
-
-//$("input[type=checkbox]").on("click", pizzaToppingsPrice);
-//$("input:checked").length;

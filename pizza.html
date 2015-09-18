@@ -6,8 +6,7 @@
       <link rel="stylesheet" href="css/styles.css" type="text/css">
       <link rel="stylesheet" href="css/animate.css" type="text/css">
       <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-      <script src="js/ticket.js"></script>
-      <script src="js/formprocessing.js"></script>
+      <script src="js/scripts.js"></script>
       <title>Pizza Picker</title>
   </head>
   <body>
@@ -16,28 +15,31 @@
         <h1>Pizza Picker</h1>
         <form id="pizza-form">
           <div class="form-group">
-            <select class="form-control" id="movie-name">
+            <select class="form-control" id="pizza-size">
               <option value="">Choose a size:</option>
-              <option value="small">Small</option>
-              <option value="medium">Medium</option>
-              <option value="large">Large</option>
-              <option value="x-large">X-Large</option>
+              <option value="Small">Small</option>
+              <option value="Medium">Medium</option>
+              <option value="Large">Large</option>
+              <option value="X-Large">X-Large</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="toppings">Toppings:</label>
-            <input type="checkbox" name="topping" value="1"> Pinapple
-            <input type="checkbox" name="topping" value="1"> Broccoli
-            <input type="checkbox" name="topping" value="1"> Onions
-            <input type="checkbox" name="topping" value="1"> Tomatoes
-            <input type="checkbox" name="topping" value="1"> Green Peppers
-            <input type="checkbox" name="topping" value="1"> Mushrooms
-            <input type="checkbox" name="topping" value="1"> Pepperoni
-            <input type="checkbox" name="topping" value="1"> Bacon
-            <input type="checkbox" name="topping" value="1"> Beef
-            <input type="checkbox" name="topping" value="1"> Chicken
-            <input type="checkbox" name="topping" value="1"> Sausage
-            <input type="checkbox" name="topping" value="1"> Ham
+            <label for="toppings">Fruit & Vegetable Toppings:</label>
+            <input type="checkbox" name="topping" id="topping"> Pinapple
+            <input type="checkbox" name="topping" id="topping"> Broccoli
+            <input type="checkbox" name="topping" id="topping"> Onions
+            <input type="checkbox" name="topping" id="topping"> Tomatoes
+            <input type="checkbox" name="topping" id="topping"> Green Peppers
+            <input type="checkbox" name="topping" id="topping"> Mushrooms
+          </div>
+          <div class="form-group">
+            <label for="toppings">Meat Toppings:</label>
+            <input type="checkbox" name="topping" id="topping"> Pepperoni
+            <input type="checkbox" name="topping" id="topping"> Bacon
+            <input type="checkbox" name="topping" id="topping"> Beef
+            <input type="checkbox" name="topping" id="topping"> Chicken
+            <input type="checkbox" name="topping" id="topping"> Sausage
+            <input type="checkbox" name="topping" id="topping"> Ham
           </div>
           <div class="form-group">
             <label for="quantity">Quantity:</label>
@@ -46,7 +48,7 @@
             <button type="submit" class="btn btn-primary">Calculate Price</button>
         </form>
         <div id="price">
-          <h2>Your pizza costs <span id="price"></span>. Enjoy your pizza.</h2>
+          <h2>Your pizza costs <span id="order-price"></span>. Enjoy your pizza.</h2>
         </div>
       </div>
     </div>
