@@ -6,3 +6,10 @@ describe('Pizza', function() {
         expect(testPizza.pizzaQuantity).to.equal(2);
     });
 });
+
+describe("pizzaSizePrice", function() {
+  it("is $6 if its a small pizza" function() {
+    var testPizza = new Pizza("Small", "Cheese", 1)
+    expect(testPizza.pizzaSizePrice()).to.equal(6);
+  });
+});
