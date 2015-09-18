@@ -1,6 +1,6 @@
 body {
     color: #F0F0F0;
-    background-image: url("http://d1oi7t5trwfj5d.cloudfront.net/69/ab/84ce57d2474bb8091f8d9912c614/movie-theater.jpg");
+    background-image: url();
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
@@ -13,16 +13,6 @@ body {
     margin-top: 20px;r
 }
 
-.terminator-bg {
-    background-image: url("../img/arnie.jpg");
-    background-size: 100% 100%;
-}
-
-
-#ticket {
-    display: none;
-}
-
-#terminator {
+#price {
     display: none;
 }

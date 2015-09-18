@@ -4,14 +4,30 @@ function Pizza(pizzaSize, pizzaToppings, pizzaQuantity) {
   this.pizzaQuantity = pizzaQuantity;
 };
 
-Pizza.prototype.pizzaSizePrice = function() {
+Pizza.prototype.orderPrice = function() {
+  var price = 0
+  var toppingsCost = this.pizzaToppings * 5;
   if (this.pizzaSize === "Small") {
-    return 8;
+    price += 8;
   } else if (this.pizzaSize === "Medium") {
-    return 10;
+    price += 10;
   } else if (this.pizzaSize === "Large") {
-    return 12;
+    price += 12;
   } else {
-    return 14;
+    price += 14;
   };
+  price += toppingsCost;
+  var pizzaOrderPrice = this.pizzaQuantity * price;
+
+  return pizzaOrderPrice;
 };
+
+
+
+
+
+
+
+
+//$("input[type=checkbox]").on("click", pizzaToppingsPrice);
+//$("input:checked").length;

@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/styles.css" type="text/css">
+      <link rel="stylesheet" href="css/animate.css" type="text/css">
+      <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="js/ticket.js"></script>
+      <script src="js/formprocessing.js"></script>
+      <title>Pizza Picker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="well">
+        <h1>Pizza Picker</h1>
+        <form id="pizza-form">
+          <div class="form-group">
+            <select class="form-control" id="movie-name">
+              <option value="">Choose a size:</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="x-large">X-Large</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="toppings">Toppings:</label>
+            <input type="checkbox" name="topping" value="1"> Pinapple
+            <input type="checkbox" name="topping" value="1"> Broccoli
+            <input type="checkbox" name="topping" value="1"> Onions
+            <input type="checkbox" name="topping" value="1"> Tomatoes
+            <input type="checkbox" name="topping" value="1"> Green Peppers
+            <input type="checkbox" name="topping" value="1"> Mushrooms
+            <input type="checkbox" name="topping" value="1"> Pepperoni
+            <input type="checkbox" name="topping" value="1"> Bacon
+            <input type="checkbox" name="topping" value="1"> Beef
+            <input type="checkbox" name="topping" value="1"> Chicken
+            <input type="checkbox" name="topping" value="1"> Sausage
+            <input type="checkbox" name="topping" value="1"> Ham
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" class="form-control" id="quantity">
+          </div>
+            <button type="submit" class="btn btn-primary">Calculate Price</button>
+        </form>
+        <div id="price">
+          <h2>Your pizza costs <span id="price"></span>. Enjoy your pizza.</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
