@@ -13,8 +13,10 @@ Pizza.prototype.orderPrice = function() {
     price += 10;
   } else if (this.pizzaSize === "Large") {
     price += 12;
-  } else {
+  } else if (this.pizzaSize === "X-Large") {
     price += 14;
+  } else {
+    price += 0;
   };
   price += toppingsCost;
   var pizzaOrderPrice = this.pizzaQuantity * price;
@@ -30,7 +32,7 @@ $(document).ready(function() {
 
     var newPizza = new Pizza(pizzaSize, pizzaToppings, pizzaQuantity);
     var price = newPizza.orderPrice();
-    if (price !== 0) {
+    if (!(price < 8)) {
       $("#error").text("");
       $("#order-price").text("Your pizza costs $" + price);
       $("#price").show();
