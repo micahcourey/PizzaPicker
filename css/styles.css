@@ -6,6 +6,7 @@ body {
     position: fixed;
     min-width: 100%;
     min-height: 100%;
+    font-family: Lato, sans-serif;
 }
 
 .well {
@@ -15,4 +16,8 @@ body {
 
 #price {
     display: none;
+}
+
+label, #topping {
+  font-size: 1.2em;
 }
