@@ -22,7 +22,14 @@ Pizza.prototype.orderPrice = function() {
   return pizzaOrderPrice;
 };
 
-
+$document.ready(function() {
+  $("form#pizza-form").submit(function(event){
+    event.preventDefault();
+    var pizzaSize = $("select#pizza-size").val();
+    var pizzaToppings = $("input$toppings:checked").length;
+    var pizzaQuantity = $("input#quantity").val()
+  })
+});
 
 
 
