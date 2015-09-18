@@ -34,7 +34,7 @@ $(document).ready(function() {
     var price = newPizza.orderPrice();
     if (!(price < 8)) {
       $("#error").text("");
-      $("#order-price").text("Your pizza costs $" + price);
+      $("#order-price").text("Your pizza order total is $" + price);
       $("#price").show();
     } else {
       $("#order-price").text("");
