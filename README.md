@@ -3,7 +3,7 @@ Pizza Picker
 
 By Micah Courey, 18-Sep-2015
 
-A pizza ordering web app that allows a user choose pizza quantity, toppings and size and calculates their orders total cost.
+A pizza ordering web app that allows a user choose pizza quantity, toppings and size and calculates their orders total cost. Check it out at: http://micahcourey.github.io/PizzaPicker
 
 Setup
 ----------
